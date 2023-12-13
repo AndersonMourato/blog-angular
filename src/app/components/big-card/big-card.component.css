@@ -29,9 +29,6 @@
     text-decoration: none;
     color: #fff;
 }
-.title > h1 > a:hover{
-    color: #ffe390;
-}
 
 .description > p{
     font-size: 0.8rem;
