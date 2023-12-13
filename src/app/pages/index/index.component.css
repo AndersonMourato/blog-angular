@@ -1,0 +1,20 @@
+.app-container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container_left, .container_right{
+    width: 50%;
+    display: flex;
+    justify-content: center; /*border: solid 1px brown; */
+}
+
+.container_right{
+    flex-direction: column;
+    justify-content: start;
+}
