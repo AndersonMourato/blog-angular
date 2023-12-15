@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 
 
 @Component({
@@ -17,4 +17,12 @@ export class ContentComponent {
   title:string = "Lorem ipsum dolor sit amet"
   @Input()
   description:string = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam aspernatur ipsum eligendi blanditiis ratione, ipsa sapiente iure! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam aspernatur ipsum eligendi blanditiis ratione, ipsa sapiente iure!"
+  @Input()
+  id:string = "0" 
+
+  constructor( private route:ActivatedRoute ){
+    this.route.params.subscribe((value) =>
+      console.log( value )
+    )
+  }
 }

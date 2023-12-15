@@ -8,7 +8,7 @@ export const routes: Routes = [
         component: IndexComponent
     },
     {
-        path:"content",
+        path:"content/:id",
         component: ContentComponent
     }
 ];

@@ -1,5 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { ActivatedRoute, RouterLink } from '@angular/router';
+import { Component, Input } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-small-card',
@@ -8,7 +8,7 @@ import { ActivatedRoute, RouterLink } from '@angular/router';
   templateUrl: './small-card.component.html',
   styleUrl: './small-card.component.css'
 })
-export class SmallCardComponent implements OnInit {
+export class SmallCardComponent{
   @Input()
   photo:string = "https://dummyimage.com/500x500/fff/aaa"
   @Input()
@@ -17,18 +17,6 @@ export class SmallCardComponent implements OnInit {
   description:string = ""
   @Input()
   id:string = "0" 
-
-  constructor( private route:ActivatedRoute ){
-  }
-
-
-  ngOnInit(): void {
-    this.route.paramMap.subscribe(value =>
-      console.log( value )
-    )
-    //throw new Error('Method not implemented.');
-  }
-
 
 }
 
