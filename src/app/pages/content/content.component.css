@@ -1,0 +1,49 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #fff;
+}
+.photo{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    overflow: hidden;
+}
+.photo > img{
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+.title{
+    max-width: 100%;
+    padding: 0 20px;
+}
+.title > h1{
+    margin-bottom: 5px;
+}
+.description{
+    max-width: 100%;
+    padding: 0 20px;
+}
+.description > p{
+    margin-top: 3px;
+}
+.buttons{
+    max-width: 100%;
+    text-align: center;
+}
+.buttons > button{
+    padding: 8px 20px;
+    margin-bottom: 30px;
+    background-color: rgb(66, 66, 232);
+    border: none;
+    color: #fff;
+    border-radius: 15px;
+}
+.buttons > button:hover{
+    background-color: rgb(95, 95, 250);
+    border: #ffffff86 solid 2px;
+
+}
