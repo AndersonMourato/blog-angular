@@ -8,6 +8,13 @@
 }
 
 .menu_title > hr{
-    margin-top: 15px;
     margin-bottom: 15px;
+    margin-top: 0;
+}
+
+/******************** RESPONSIVE *******************************/
+@media screen and (max-width: 600px){
+    .menu_title > h1{
+        font-size: 2rem;
+    }
 }

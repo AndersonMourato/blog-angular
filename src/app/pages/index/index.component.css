@@ -18,3 +18,16 @@
     flex-direction: column;
     justify-content: start;
 }
+
+
+/******************** RESPONSIVE *******************************/
+@media screen and (max-width: 600px){
+    .container{
+        display: block;
+    }
+
+    .container_left, .container_right{
+        width: 100%;
+    }
+
+}

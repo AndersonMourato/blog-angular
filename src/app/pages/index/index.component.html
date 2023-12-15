@@ -1,16 +1,43 @@
 <div class="app-container">
-    <app-menu-title></app-menu-title>
+    <header>
+        <app-menu-bar></app-menu-bar>
+    </header>
+
+    <app-menu-title 
+        setTitle="BLOG-ANGULAR" 
+    ></app-menu-title>
     
     <div class="container">
         <div class="container_left">
-            <app-big-card></app-big-card>
+            <!-- app-big-card atributo #photo, #linkTitle-->
+            <app-big-card
+                title="Lorem ipsum dolor sit amet"
+                description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam aspernatur ipsum eligendi blanditiis ratione, ipsa sapiente iure!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam aspernatur ipsum eligendi blanditiis ratione, ipsa sapiente iure!"
+            ></app-big-card>
         </div>
         <div class="container_right">
-            <app-small-card></app-small-card>
-            <app-small-card></app-small-card>
-            <app-small-card></app-small-card>
+            <!-- app-small-card atributo #photo, #link-->
+            <app-small-card
+                author="Doot's Sitamet"
+                description="Lorem ipsum dolor sit amet, consectetur adipisicing.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam aspernatur ipsum eligendi blanditiis ratione, ipsa sapiente iure!"
+            ></app-small-card>
+
+            <app-small-card
+                author="Doot's Sitamet"
+                description="Lorem ipsum dolor sit amet, consectetur adipisicing.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam aspernatur ipsum eligendi blanditiis ratione, ipsa sapiente iure!"
+            ></app-small-card>
+
+            <app-small-card
+                author="Doot's Sitamet"
+                description="Lorem ipsum dolor sit amet, consectetur adipisicing.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam aspernatur ipsum eligendi blanditiis ratione, ipsa sapiente iure!"
+            ></app-small-card>
+           
         </div>
-    </div>
+    </div> 
 </div>
 
 

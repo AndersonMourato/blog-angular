@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-big-card',
@@ -8,5 +8,12 @@ import { Component } from '@angular/core';
   styleUrl: './big-card.component.css'
 })
 export class BigCardComponent {
-
+  @Input()
+  photo:string = "https://dummyimage.com/640x400/fff/aaa"
+  @Input()
+  title:string = ""
+  @Input()
+  description:string = ""
+  @Input()
+  linkTitle:string = "#"  
 }

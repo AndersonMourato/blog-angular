@@ -1,0 +1,25 @@
+.menu-bar{
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    justify-content: center;
+}
+
+.menu-bar > ul{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+.menu-bar > ul > li{
+    margin: 0 25px;
+    text-decoration: none;
+    list-style: none;
+}
+.menu-bar > ul > li > a{
+    text-decoration: none;
+    color: #fff;
+}
+.menu-bar > ul > li > a:hover{
+    border-bottom: 2px solid #444444;
+}
